@@ -1,6 +1,7 @@
 ﻿using SchedulerV5.EF.Data;
 using SchedulerV5.EF.Models;
 using System;
+using System.Linq;
 
 namespace SchedulerV5.EF
 {
@@ -2581,6 +2582,67 @@ namespace SchedulerV5.EF
                 //context.ScheduleConfiguration.Add(settingsMonthlyTheEveryLastWeekEndDay);
                 //context.SaveChanges();
                 #endregion
+                //CRUD Operations
+                #region Insert Data
+                //var settings = new Settings()
+                //{
+                //    CurrentDate =
+                //    Type =
+                //    Enabled =
+                //    OnceTimeAt =
+                //    Language =
+                //    Type =
+                //    Enabled =
+                //    OnceTimeAt =
+                //    CalculatedDate =
+                //    OnceTimeAt =
+                //    Occurs =
+                //    Day =
+                //    NumDay =
+                //    NumMonths =
+                //    The =
+                //    MonthlyFreq =
+                //    DailyFreq =
+                //    Monthly2Freq =
+                //    OccursOnceAt =
+                //    OccursOnceAtHour =
+                //    OccursEvery =
+                //    OccursEveryFreq =
+                //    Freq =
+                //    FreqTime =
+                //    StartingHour =
+                //    EndingHour =
+                //    StartingLimit =
+                //    EndingLimit =
+                //    NextExecutionTime =
+                //    Description =
+                //    CalculatedDate =
+                //    NeedToAddDay =
+                //    LastDay =
+                //    IsOverLimit =
+                //};
+                //context.ScheduleConfiguration.Add(settings);
+                //context.SaveChanges();
+                #endregion
+                #region Update Data
+                //var setting = context.ScheduleConfiguration.Find(1);
+                //setting.CurrentDate = DateTime.Now;
+                //context.SaveChanges();
+                #endregion
+                #region Remove Data
+                //var setting = context.ScheduleConfiguration.Find(1);
+                //context.ScheduleConfiguration.Remove(setting);
+                //context.SaveChanges();
+                #endregion
+                #region Empty Table
+                //for (int i = 0; i < context.ScheduleConfiguration.Count(); i++)
+                //{
+                //    var setting = context.ScheduleConfiguration.Find(i + 1);
+                //    Console.WriteLine("Eliminado id: {0}", i + 1);
+                //    context.ScheduleConfiguration.Remove(setting);
+                //}
+                //context.SaveChanges();
+                #endregion
                 #region Show Active Config
                 //var activeConfig = (from s in context.ScheduleConfiguration
                 //                    where DateTime.Compare(s.CalculatedDate, DateTime.Today) > 0
@@ -2592,15 +2654,6 @@ namespace SchedulerV5.EF
                 //{
                 //    Console.WriteLine("ID: {0}, Calculated Date: {1}", setting.Id, setting.CalculatedDate);
                 //}
-                #endregion
-                #region Empty Table
-                //for (int i = 0; i < 135; i++)
-                //{
-                //    var setting = context.ScheduleConfiguration.Find(i+1);
-                //    Console.WriteLine("Eliminado id: {0}", i+1);
-                //    context.ScheduleConfiguration.Remove(setting);
-                //}
-                //context.SaveChanges();
                 #endregion
             }
         }

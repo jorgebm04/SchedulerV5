@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SchedulerV5.EF.Models
 {
-    public class Settings
+    public class Settings 
     {
         [Key]
         public int Id { get; set; }
